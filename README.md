@@ -1,2 +1,2 @@
 # GymWebsite
-This is a Gym-Website 
+Simple Gym website using HTML and CSS
