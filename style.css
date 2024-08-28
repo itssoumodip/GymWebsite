@@ -1,118 +1,159 @@
-        /*  CSS Reset */
-        body {
-            font-family: 'Archivo Black', sans-serif;
-            color: white;
-            margin: 0px;
-            padding: 0px;
-            background: url('img/bg.jpg');
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-color: black;
-        }
-
-        .left {
-            position: absolute;
-            left: 50px;
-            top: 18px;
-            display: inline-block;
-            /* border: 2px solid red; */
-        }
-
-        .mid {
-            display: block;
-            width: 56%;
-            margin: 30px auto;
-            /* display: inline-block; */
-            /* border: 2px solid rgb(0, 255, 68); */
-            border-radius: 10px;
-        }
-
-        .right {
-            position: absolute;
-            right: 18px;
-            top: 42px;
-            display: inline-block;
-            /* border: 2px solid rgb(246, 255, 0); */
-        }
-
-        .navbar {
-            display: inline-block;
-        }
-
-        .navbar li {
-            display: inline-block;
-            font-size: 20px;
-        }
-
-        .navbar li a {
-            color: white;
-            text-decoration: none;
-            padding: 20px 20px;
-            font-size: 20px;
-        }
-
-        .navbar li a:hover,
-        .navbar li a.active {
-            text-decoration: underline;
-            color: gray;
-        }
-
-        .left img {
-            width: 100px;
-            /* filter: invert(); */
-        }
-
-        .left div {
-            font-size: 9px;
-            text-align: center;
-            line-height: 12px;
-        }
-
-        .btn {
-            margin: 0px 9px;
-            color: white;
-            background-color: black;
-            padding: 4px 8px;
-            border: 2px solid gray;
-            border-radius: 15px;
-            font-size: 14px;
-            font-family: 'Archivo Black', sans-serif;
-        }
-
-        .btn:hover {
-            background-color: rgba(119, 119, 119, 0.614);
-        }
-
-        .container {
-            font-family: 'Archivo Black', sans-serif;
-            margin: 283px auto;
-            border: 2px solid white;
-            /* margin: 194px 50px; */
-            padding: 17px;
-            width: 40%;
-            display: block;
-            border-radius: 22px;
-        }
-
-        .form-group input {
-            text-align: center;
-            display: block;
-            width: 358px;
-            padding: 3px;
-            border: 0px solid white;
-            margin: 11px auto;
-            font-size: 16px;
-            border-radius: 6px;
-            font-family: 'Archivo Black', sans-serif;
-        }
-
-        .container h1 {
-            text-align: center;
-        }
-
-        .container button {
-            display: block;
-            width: 63%;
-            margin: auto;
-            border-radius: 7px;
-        }
+/*  CSS Reset */
+body {
+    font-family: "Archivo Black", sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url("img/bg.jpg");
+    background-size: cover; /* Added cover to ensure background image covers the whole screen */
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  
+  .left {
+    position: absolute;
+    left: 50px;
+    top: 18px;
+    display: inline-block;
+    /* border: 2px solid red; */
+  }
+  
+  .mid {
+    display: block;
+    width: 56%;
+    margin: 30px auto;
+    /* display: inline-block; */
+    /* border: 2px solid rgb(0, 255, 68); */
+    border-radius: 10px;
+  }
+  
+  .right {
+    position: absolute;
+    right: 18px;
+    top: 42px;
+    display: inline-block;
+    /* border: 2px solid rgb(246, 255, 0); */
+  }
+  
+  .navbar {
+    display: inline-block;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 20px;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+  
+  .left img {
+    width: 100px;
+    /* filter: invert(); */
+  }
+  
+  .left div {
+    font-size: 9px;
+    text-align: center;
+    line-height: 12px;
+  }
+  
+  .btn {
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 8px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: "Archivo Black", sans-serif;
+  }
+  
+  .btn:hover {
+    background-color: rgba(119, 119, 119, 0.614);
+  }
+  
+  .container {
+    font-family: "Archivo Black", sans-serif;
+    margin: 283px auto;
+    border: 2px solid white;
+    /* margin: 194px 50px; */
+    padding: 17px;
+    width: 40%;
+    display: block;
+    border-radius: 22px;
+  }
+  
+  .form-group input {
+    text-align: center;
+    display: block;
+    width: 358px;
+    padding: 3px;
+    border: 0px solid white;
+    margin: 11px auto;
+    font-size: 16px;
+    border-radius: 6px;
+    font-family: "Archivo Black", sans-serif;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  .container button {
+    display: block;
+    width: 63%;
+    margin: auto;
+    border-radius: 7px;
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 80%; /* Make container wider on smaller screens */
+    }
+  
+    .left {
+      position: relative; /* Make left div relative for better positioning */
+      left: 0;
+      top: 0;
+    }
+  
+    .right {
+      position: relative; /* Make right div relative for better positioning */
+      right: 0;
+      top: 0;
+    }
+  
+    .mid {
+      width: 90%; /* Make navbar wider on smaller screens */
+      margin: 10px auto; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .left img {
+      width: 80px; /* Reduce logo size for smaller screens */
+    }
+  
+    .navbar li {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+  
+    .form-group input {
+      width: 90%; /* Make input fields wider on smaller screens */
+    }
+  
+    .container button {
+      width: 90%; /* Make submit button wider on smaller screens */
+    }
+  }
