@@ -1,11 +1,11 @@
-/*  CSS Reset */
+
 body {
     font-family: "Archivo Black", sans-serif;
     color: white;
     margin: 0px;
     padding: 0px;
     background: url("img/bg.jpg");
-    background-size: cover; /* Added cover to ensure background image covers the whole screen */
+    background-size: cover; 
     background-repeat: no-repeat;
     background-color: black;
   }
@@ -116,44 +116,44 @@ body {
     margin: auto;
     border-radius: 7px;
   }
-  /* Media queries for responsiveness */
+ 
   @media (max-width: 768px) {
     .container {
-      width: 80%; /* Make container wider on smaller screens */
+      width: 80%; 
     }
   
     .left {
-      position: relative; /* Make left div relative for better positioning */
+      position: relative; 
       left: 0;
       top: 0;
     }
   
     .right {
-      position: relative; /* Make right div relative for better positioning */
+      position: relative; 
       right: 0;
       top: 0;
     }
   
     .mid {
-      width: 90%; /* Make navbar wider on smaller screens */
-      margin: 10px auto; /* Adjust margin for smaller screens */
+      width: 90%; 
+      margin: 10px auto; 
     }
   }
   
   @media (max-width: 480px) {
     .left img {
-      width: 80px; /* Reduce logo size for smaller screens */
+      width: 80px; 
     }
   
     .navbar li {
-      font-size: 16px; /* Reduce font size for smaller screens */
+      font-size: 16px; 
     }
   
     .form-group input {
-      width: 90%; /* Make input fields wider on smaller screens */
+      width: 90%;
     }
   
     .container button {
-      width: 90%; /* Make submit button wider on smaller screens */
+      width: 90%; 
     }
   }
